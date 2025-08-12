@@ -1,0 +1,83 @@
+/* Navbar styles */
+.navbar {
+    background-color: #c441d3; /* Tailwind's bg-blue-600 */
+    color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 12px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    font-family: 'Inter', sans-serif; /* Ensuring modern typography */
+  }
+  
+  /* Title */
+  .navbar-title {
+    font-size: 2rem; /* Slightly larger for better visibility */
+    font-weight: bold;
+    margin-left: 8px;
+    margin-top: 20px;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Increased spacing between links */
+    font-size: 1rem; /* Slightly bigger for readability */
+  }
+  
+  .navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s, transform 0.1s;
+  }
+  
+  .navbar-links a:hover {
+    color: #6a187a; /* Lighter blue */
+    transform: translateY(-1px);
+  }
+  
+  /* Auth/User Section */
+  .navbar-user,
+  .navbar-auth {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.3rem;
+  }
+  
+  /* Adjust username spacing */
+  .navbar-user span {
+    font-weight: 500;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: #ef4444; /* Tailwind's bg-red-500 */
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #dc2626; /* Darker red */
+    transform: scale(1.05);
+  }
+  
+  /* Add margin to the body to prevent content from going under navbar */
+  body {
+    padding-top: 64px; /* Adjust based on navbar height */
+  }
+  

@@ -1,0 +1,80 @@
+/* Home Page Styles */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.home-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1f2937;
+    animation: fadeSlideIn 1s ease-out; /* Apply animation */
+}
+
+.home-description {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: #4b5563;
+    animation: fadeSlideIn 2s ease-out; /* Slight delay for smooth effect */
+}
+
+.home-container {
+    text-align: center;
+    margin-top: 10px; /* Adjusted to avoid overlap with navbar */
+    margin-bottom: 100px;
+    padding: 0 24px; /* px-6 equivalent */
+  }
+  
+  .home-title {
+    font-size: 3rem; /* text-4xl equivalent */
+    font-weight: 800; /* font-extrabold */
+    color: #1f2937; /* Tailwind's text-gray-800 */
+  }
+  
+  .home-description {
+    margin-top: 30px; /* mt-4 */
+    font-size: 1.8rem; /* text-lg equivalent */
+    color: #4b5563; /* Tailwind's text-gray-600 */
+  }
+  .nav-links {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Increased gap for better spacing */
+    opacity: 0; /* Hide initially */
+    animation: fadeSlideUp 1s ease-out forwards;
+    animation-delay: 2s; /* Delay to sync with typing effect */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 12px 20px; /* Slightly larger padding */
+    background-color: #c441d3;
+    color: black;
+    border: 4px solid #791e83;
+    border-radius: 8px; /* Softer rounded corners */
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    background-color: #791e83;
+  }
+
+  
+  

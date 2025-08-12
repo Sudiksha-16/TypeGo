@@ -1,0 +1,58 @@
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 500px; /* Increased width */
+    height: 400px;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.register-form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.register-input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.register-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+    background-color: #c441d3;
+    border:none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-button:hover {
+    background-color: #791e83;
+}
+
+.register-error {
+    color: red;
+    margin-top: 10px;
+    font-size: 1rem;
+}
